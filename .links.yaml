@@ -1,0 +1,8 @@
+# Run `just links-sync` from the umbrella to create these local links.
+links:
+  - path: plans
+    target: plans
+    why: share implementation plans with the umbrella
+  - path: .claude/skills/committing
+    target: maintenance/plugin/skills/committing
+    why: use the shared two-step commit procedure

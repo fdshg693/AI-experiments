@@ -1,0 +1,29 @@
+# Local-only case data. Keep anything that cannot be shared here or outside Git.
+/private/
+/cases/*/private/
+
+# Environment files and keys
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+
+# Agent configuration generated or copied locally
+/.claude/settings.json
+/.claude/settings.local.json
+/.claude/skill-tools.hooks.yaml
+/.claude/hooks/
+/.skill-tools/
+
+# Links created by `just links-sync`
+/plans
+/.claude/skills/committing
+
+# Local dependencies, caches and OS files
+.venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
